@@ -1,0 +1,14 @@
+SELECT ano , mes
+FROM `basedosdados.br_anatel_banda_larga_fixa.densidade_brasil` LIMIT 10
+EXPLICAÇÃO DO CÓDIGO:
+Selecionado somente o ano e mês dentro do BD indicado após o comando FROM, com limite de 10 linhas nesta consulta.
+
+SELECT *
+FROM `basedosdados.br_anatel_banda_larga_fixa.densidade_municipio` 
+WHERE sigla_uf = 'RJ'
+EXPLICAÇÃO DO CÓDIGO:
+Selecionamos somente os dados do BD do municipio do Rio de Janeiro para um conhecimento geral somente deste municipio dentro do BD.
+
+
+
+
