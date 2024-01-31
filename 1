@@ -1,0 +1,50 @@
+SELECT ano,
+       sigla_uf AS estado,
+       velocidade AS "qualidade do sinal"
+FROM `basedosdados.br_anatel_banda_larga_fixa.microdados`
+WHERE (sigla_uf = 'RJ' AND 'CIDADE MARAVILHOSA' = 'RJ')
+   OR sigla_uf = 'SP'
+LIMIT 100;
+EXPLICAÇÃO DO CÓDIGO:
+Adicionei vírgulas após sigla_uf AS estado e velocidade AS "qualidade do sinal".
+Adicionei parênteses para tornar claro o agrupamento lógico em torno das condições na cláusula WHERE.
+Corrigi a condição WHERE para sigla_uf = 'RJ' AND 'CIDADE MARAVILHOSA' = 'RJ', assumindo que você queria que a condição sigla_uf fosse igual a 'RJ' e também a string 'CIDADE MARAVILHOSA' fosse igual a 'RJ'.
+Removi o ponto e vírgula após 'CIDADE MARAVILHOSA' = 'RJ', pois não é necessário na cláusula WHERE.
+Adicionei aspas duplas em velocidade AS "qualidade do sinal" para lidar com espaços no nome da coluna.
+
+
+SELECT ano,
+       sigla_uf AS estado,
+       velocidade AS qualidadeSinal
+FROM `basedosdados.br_anatel_banda_larga_fixa.microdados`
+WHERE (sigla_uf = 'RJ' AND 'CIDADE MARAVILHOSA' = 'RJ')
+   OR sigla_uf = 'SP'
+LIMIT 100;
+EXPLIQUE-ME O CÓDIGO:
+SELECT ano, sigla_uf AS estado, velocidade AS qualidadeSinal:
+Esta linha realiza uma seleção de colunas da tabela especificada.
+ano, sigla_uf e velocidade são colunas que serão incluídas no resultado da consulta.
+AS é usado para renomear as colunas no resultado da consulta. No caso, sigla_uf é renomeada para estado, e velocidade é renomeada para qualidadeSinal.
+FROM basedosdados.br_anatel_banda_larga_fixa.microdados:
+Indica a tabela da qual as informações serão selecionadas. Neste caso, a tabela é basedosdados.br_anatel_banda_larga_fixa.microdados.
+WHERE (sigla_uf = 'RJ' AND 'CIDADE MARAVILHOSA' = 'RJ') OR sigla_uf = 'SP':
+Esta cláusula WHERE filtra as linhas da tabela que atendem a determinadas condições.
+A condição (sigla_uf = 'RJ' AND 'CIDADE MARAVILHOSA' = 'RJ') OR sigla_uf = 'SP' especifica que queremos linhas onde a coluna sigla_uf seja igual a 'RJ' e 'CIDADE MARAVILHOSA' seja igual a 'RJ', ou onde sigla_uf seja igual a 'SP'.
+LIMIT 100:
+Limita o número de linhas retornadas pelo resultado da consulta para 100. Isso é útil quando você quer visualizar apenas uma amostra dos dados ou evitar a recuperação de um grande conjunto de resultados.
+Em resumo, o script SQL está selecionando as colunas ano, sigla_uf renomeada como estado, e velocidade renomeada como qualidadeSinal da tabela basedosdados.br_anatel_banda_larga_fixa.microdados. Ele filtra as linhas para incluir apenas aquelas onde o estado (sigla_uf) é igual a 'RJ' e 'CIDADE MARAVILHOSA' é igual a 'RJ', ou onde o estado (sigla_uf) é igual a 'SP'. O resultado final é limitado a 100 linhas.
+
+
+SELECT ano,
+       sigla_uf AS estado,
+       velocidade AS "qualidade do sinal"
+FROM `basedosdados.br_anatel_banda_larga_fixa.microdados`
+WHERE (sigla_uf = 'RJ' AND 'CIDADE MARAVILHOSA' = 'RJ')
+   OR sigla_uf = 'SP'
+LIMIT 100;
+EXPLICAÇÃO DO CÓDIGO:
+Adicionei vírgulas após sigla_uf AS estado e velocidade AS "qualidade do sinal".
+Adicionei parênteses para tornar claro o agrupamento lógico em torno das condições na cláusula WHERE.
+Corrigi a condição WHERE para sigla_uf = 'RJ' AND 'CIDADE MARAVILHOSA' = 'RJ', assumindo que você queria que a condição sigla_uf fosse igual a 'RJ' e também a string 'CIDADE MARAVILHOSA' fosse igual a 'RJ'.
+Removi o ponto e vírgula após 'CIDADE MARAVILHOSA' = 'RJ', pois não é necessário na cláusula WHERE.
+Adicionei aspas duplas em velocidade AS "qualidade do sinal" para lidar com espaços no nome da coluna.
