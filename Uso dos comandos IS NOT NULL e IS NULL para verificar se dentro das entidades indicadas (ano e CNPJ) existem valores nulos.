@@ -1,0 +1,19 @@
+SELECT ano, cnpj
+FROM `basedosdados.br_anatel_banda_larga_fixa.microdados`
+WHERE ano IS NOT NULL
+LIMIT 100;
+
+Explicação do Código:
+
+SELECT:
+A cláusula SELECT é usada para especificar as colunas que você deseja recuperar na consulta.
+Neste caso, são selecionadas as colunas ano e cnpj.
+FROM:
+A cláusula FROM indica de qual tabela os dados serão recuperados.
+A tabela é basedosdados.br_anatel_banda_larga_fixa.microdados.
+WHERE:
+A cláusula WHERE é usada para filtrar os resultados da consulta com uma condição.
+Neste caso, apenas as linhas em que o valor da coluna ano não é nulo serão incluídas na resposta.
+LIMIT:
+A cláusula LIMIT restringe o número de linhas retornadas na consulta.
+Aqui, está limitado a 100 linhas.
