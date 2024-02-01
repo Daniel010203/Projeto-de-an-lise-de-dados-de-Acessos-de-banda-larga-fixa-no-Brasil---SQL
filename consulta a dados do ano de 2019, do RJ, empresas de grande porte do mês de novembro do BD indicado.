@@ -1,0 +1,28 @@
+SELECT
+    ano = 2019,
+    sigla_uf,
+    empresa = 'Grande Porte'
+FROM
+    `basedosdados.br_anatel_banda_larga_fixa.microdados`
+WHERE
+    mes = 11
+LIMIT
+    100;
+EXPLICAÇÃO DO CÓDIGO:
+SELECT:
+A cláusula SELECT é usada para especificar quais colunas da tabela você deseja recuperar.
+No caso, são selecionadas três colunas: ano, sigla_uf, e empresa.
+FROM:
+A cláusula FROM indica de qual tabela os dados serão recuperados.
+A tabela é basedosdados.br_anatel_banda_larga_fixa.microdados.
+WHERE:
+A cláusula WHERE é usada para filtrar os resultados da consulta com uma condição.
+Neste caso, apenas as linhas em que o valor da coluna mes seja igual a 11 serão incluídas na resposta.
+LIMIT:
+A cláusula LIMIT restringe o número de linhas retornadas na consulta.
+Aqui, está limitado a 100 linhas.
+Aliases:
+O código usa aliases para renomear algumas colunas na saída da consulta.
+ano = 2019 significa que uma nova coluna chamada ano será retornada, com todos os valores definidos como 2019.
+empresa = 'Grande Porte' faz o mesmo para a coluna empresa, onde todos os valores são definidos como 'Grande Porte'.
+Então, a consulta retornará até 100 linhas da tabela basedosdados.br_anatel_banda_larga_fixa.microdados onde o valor da coluna mes seja 11. As colunas ano e empresa na saída terão valores fixos de 2019 e 'Grande Porte', respectivamente. A coluna sigla_uf manterá os valores originais da tabela.
