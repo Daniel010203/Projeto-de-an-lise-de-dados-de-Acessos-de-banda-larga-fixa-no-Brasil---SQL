@@ -1,0 +1,25 @@
+SELECT DISTINCT empresa , porte_empresa
+ FROM `basedosdados.br_anatel_banda_larga_fixa.microdados` LIMIT 100
+
+EXPLICAÇÃO DO CÓDIGO ABAIXO:
+Certamente, vou explicar o script SQL fornecido:
+
+```sql
+SELECT DISTINCT empresa, porte_empresa
+FROM `basedosdados.br_anatel_banda_larga_fixa.microdados`
+LIMIT 100;
+```
+
+1. **`SELECT DISTINCT empresa, porte_empresa`**:
+   - `SELECT`: Inicia a instrução de seleção, que é usada para recuperar dados de uma ou mais tabelas.
+   - `DISTINCT empresa, porte_empresa`: A cláusula `DISTINCT` é usada para retornar apenas valores únicos. Neste caso, a consulta retorna combinações únicas de valores nas colunas `empresa` e `porte_empresa`.
+
+2. **`FROM basedosdados.br_anatel_banda_larga_fixa.microdados`**:
+   - `FROM`: Indica a fonte dos dados, neste caso, a tabela ou visualização de dados.
+   - `basedosdados.br_anatel_banda_larga_fixa.microdados`: Especifica a tabela ou visualização de dados de onde os dados serão recuperados. Parece ser uma tabela chamada "microdados" relacionada à Anatel (Agência Nacional de Telecomunicações), no contexto de banda larga fixa, hospedada no serviço "basedosdados.br".
+
+3. **`LIMIT 100`**:
+   - `LIMIT`: Restringe o número de linhas retornadas pela consulta.
+   - `100`: Neste caso, limita o resultado a 100 linhas. Isso é útil para evitar a recuperação de um grande número de linhas quando você está explorando os dados ou precisa de uma amostra.
+
+Portanto, a consulta retorna até 100 combinações únicas de valores das colunas `empresa` e `porte_empresa` da tabela "microdados" relacionada à Anatel. Essa operação é útil para obter uma visão inicial dos dados e entender quais empresas e portes de empresas estão presentes na tabela.
