@@ -1,0 +1,20 @@
+SELECT count(distinct cnpj) AS TodasAsEmpresasDoBD
+ FROM `basedosdados.br_anatel_banda_larga_fixa.microdados` 
+
+EXPLICAÇÃO DO CÓDIGO:
+
+```sql
+SELECT COUNT(DISTINCT cnpj) AS TodasAsEmpresasDoBD
+FROM `basedosdados.br_anatel_banda_larga_fixa.microdados`;
+```
+
+1. **`SELECT COUNT(DISTINCT cnpj) AS TodasAsEmpresasDoBD`**:
+   - `SELECT`: Inicia a instrução de seleção, que é usada para recuperar dados de uma ou mais tabelas.
+   - `COUNT(DISTINCT cnpj)`: Utiliza a função `COUNT` para contar o número de valores únicos na coluna `cnpj`. O modificador `DISTINCT` garante que apenas valores únicos sejam contados.
+   - `AS TodasAsEmpresasDoBD`: Renomeia a coluna resultante como "TodasAsEmpresasDoBD". O uso de `AS` é opcional, mas fornece um nome mais significativo à coluna de contagem.
+
+2. **`FROM basedosdados.br_anatel_banda_larga_fixa.microdados`**:
+   - `FROM`: Indica a fonte dos dados, neste caso, a tabela ou visualização de dados.
+   - `basedosdados.br_anatel_banda_larga_fixa.microdados`: Especifica a tabela ou visualização de dados de onde os dados serão recuperados. Parece ser uma tabela chamada "microdados" relacionada à Anatel (Agência Nacional de Telecomunicações), no contexto de banda larga fixa, hospedada no serviço "basedosdados.br".
+
+Portanto, a consulta conta o número de valores únicos na coluna `cnpj` da tabela ou visualização de dados mencionada e renomeia a coluna resultante como "TodasAsEmpresasDoBD". Isso fornece a quantidade de empresas distintas presentes na coluna `cnpj` no conjunto de dados fornecido.
