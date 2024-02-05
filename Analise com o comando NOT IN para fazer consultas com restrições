@@ -1,0 +1,17 @@
+SELECT *
+FROM `basedosdados.br_anatel_banda_larga_fixa.microdados`
+WHERE sigla_uf not in ('RJ','SP','RO')
+LIMIT 1000;
+
+EXPLICAÇÃO DO CÓDIGO:
+Esse código SQL está realizando uma consulta em um banco de dados, selecionando dados da tabela microdados localizada no esquema br_anatel_banda_larga_fixa do dataset basedosdados. Aqui está uma explicação para cada parte do código:
+SELECT *: Esta parte da consulta solicita a seleção de todas as colunas disponíveis na tabela microdados. O asterisco (*) é um curinga que representa todas as colunas.
+FROM basedosdados.br_anatel_banda_larga_fixa.microdados``: Aqui, especifica-se a tabela da qual os dados serão recuperados. Parece que a tabela está localizada em um esquema chamado basedosdados, no dataset br_anatel_banda_larga_fixa, e tem o nome microdados.
+WHERE sigla_uf not in ('RJ', 'SP', 'RO'): Esta cláusula WHERE impõe uma condição aos resultados. A consulta retornará apenas as linhas em que o valor da coluna sigla_uf não é 'RJ', 'SP' ou 'RO'. O operador NOT IN nega a condição, selecionando todas as linhas em que sigla_uf não está em 'RJ', 'SP' ou 'RO'.
+LIMIT 1000: Esta cláusula limita o número de linhas retornadas pelo resultado da consulta a 1000. Isso pode ser útil para evitar a recuperação de grandes conjuntos de dados quando você está interessado apenas em uma amostra ou parte dos resultados.
+Portanto, a consulta completa retorna todas as colunas para as linhas na tabela microdados onde a coluna sigla_uf não é 'RJ', 'SP' ou 'RO', limitando o resultado a 1000 linhas.
+
+
+
+
+
