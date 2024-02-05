@@ -1,0 +1,33 @@
+SELECT *
+FROM `basedosdados.br_anatel_banda_larga_fixa.microdados`
+WHERE empresa like 'R%'
+LIMIT 1000;
+
+EXPLICAÇÃO DO CÓDIGO:
+SELECT *: Esta parte da consulta solicita a seleção de todas as colunas disponíveis na tabela. O asterisco * é um curinga que representa todas as colunas.
+FROM basedosdados.br_anatel_banda_larga_fixa.microdados``: Aqui, é especificada a tabela da qual os dados serão recuperados. Parece que a tabela está localizada no esquema basedosdados, no dataset br_anatel_banda_larga_fixa, e tem o nome microdados.
+WHERE empresa LIKE 'R%': Essa cláusula impõe uma condição aos resultados. A consulta retornará apenas as linhas em que a coluna empresa começa com a letra 'R'. O operador LIKE é usado para comparar padrões de texto, e '%' é um curinga que representa zero ou mais caracteres.
+LIMIT 1000: Esta cláusula limita o número de linhas retornadas pelo resultado da consulta a 1000. Isso pode ser útil para evitar a recuperação de grandes conjuntos de dados quando você está interessado apenas em uma amostra ou parte dos resultados.
+Portanto, a consulta completa retorna todas as colunas para as linhas na tabela microdados onde o nome da empresa (empresa) começa com a letra 'R', limitando o resultado a 1000 linhas.
+
+
+SELECT *
+FROM `basedosdados.br_anatel_banda_larga_fixa.microdados`
+WHERE empresa like '%G%'
+LIMIT 1000;
+
+EXPLICAÇÃO DO CÓDIGO:
+SELECT *: Esta parte da consulta solicita a seleção de todas as colunas disponíveis na tabela. O asterisco * é um curinga que representa todas as colunas.
+FROM basedosdados.br_anatel_banda_larga_fixa.microdados``: Aqui, é especificada a tabela da qual os dados serão recuperados. Parece que a tabela está localizada no esquema basedosdados, no dataset br_anatel_banda_larga_fixa, e tem o nome microdados.
+WHERE empresa LIKE '%G%': Esta cláusula impõe uma condição para os resultados. A consulta retornará apenas as linhas em que a coluna empresa contém a letra 'G' em qualquer posição. O operador LIKE é usado com o símbolo % para representar qualquer sequência de caracteres (incluindo nenhum caractere) antes ou depois da letra 'G'.
+LIMIT 1000: Esta cláusula limita o número de linhas retornadas pelo resultado da consulta a 1000. Isso pode ser útil para evitar a recuperação de grandes conjuntos de dados quando você está interessado apenas em uma amostra ou parte dos resultados.
+Portanto, a consulta completa retorna todas as colunas para as linhas na tabela microdados onde o nome da empresa contém a letra 'G', limitando o resultado a 1000 linhas.
+
+
+
+
+
+
+
+
+
