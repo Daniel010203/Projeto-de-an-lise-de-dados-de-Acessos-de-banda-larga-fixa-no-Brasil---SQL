@@ -1,0 +1,45 @@
+SELECT *
+FROM `basedosdados.br_anatel_banda_larga_fixa.microdados`
+WHERE sigla_uf = 'CE'
+LIMIT 1000;
+
+EXPLICAÇÃO DO CÓDIGO:
+Este código SQL está fazendo uma consulta em uma tabela chamada basedosdados.br_anatel_banda_larga_fixa.microdados com o objetivo de recuperar dados específicos. Vamos analisar o código linha por linha:
+SELECT *: Esta parte da consulta seleciona todas as colunas da tabela. O asterisco (*) é usado como um curinga para representar todas as colunas disponíveis.
+FROM basedosdados.br_anatel_banda_larga_fixa.microdados: Indica de qual tabela os dados serão recuperados. Neste caso, a tabela é chamada microdados e está localizada no esquema basedosdados.br_anatel_banda_larga_fixa.
+WHERE sigla_uf = 'CE': Esta cláusula restringe os resultados apenas às linhas onde a coluna sigla_uf é igual a 'CE'. Isso filtra os dados para incluir apenas registros relacionados ao estado do Ceará (CE).
+LIMIT 1000: Limita o número de linhas retornadas pelo resultado da consulta para 1000. Isso é útil quando você está interessado apenas em uma amostra dos dados ou para melhorar o desempenho da consulta ao lidar com grandes conjuntos de dados.
+Em resumo, o código está buscando todas as colunas da tabela microdados onde o valor na coluna sigla_uf é 'CE' (Ceará), e está limitando o resultado a 1000 linhas.
+
+
+SELECT *
+FROM `basedosdados.br_anatel_banda_larga_fixa.microdados`
+WHERE cnpj = '3964292000170'
+LIMIT 1000;
+
+EXPLICAÇÃO DO CÓDIGO:
+SELECT *: Esta parte da consulta SQL solicita a seleção de todas as colunas (* significa "todas") da tabela especificada.
+FROM basedosdados.br_anatel_banda_larga_fixa.microdados``: Especifica a tabela da qual os dados devem ser selecionados. Neste caso, a tabela está localizada no banco de dados chamado basedosdados, o esquema é br_anatel_banda_larga_fixa, e o nome da tabela é microdados.
+WHERE cnpj = '3964292000170': Esta cláusula WHERE filtra os resultados para incluir apenas as linhas em que a coluna cnpj tem o valor '3964292000170'. Isso é útil para restringir os resultados a entradas específicas com base em um critério.
+LIMIT 1000: Limita o número de linhas retornadas pelo resultado da consulta a 1000. Isso é útil para evitar a recuperação de grandes conjuntos de dados, especialmente quando você está interessado apenas em uma amostra ou em um número limitado de resultados.
+Em resumo, o código realiza uma consulta para selecionar todas as colunas da tabela microdados onde o valor na coluna cnpj é igual a '3964292000170', limitando o resultado a 1000 linhas. Este tipo de consulta é comum ao buscar informações específicas em grandes conjuntos de dados.
+
+
+SELECT *
+FROM `basedosdados.br_anatel_banda_larga_fixa.microdados`
+WHERE sigla_uf = 'RJ'
+LIMIT 1000;
+
+EXPLICAÇÃO DO CÓDIGO:
+Este código SQL está realizando uma consulta em um banco de dados que parece ser armazenado em um ambiente chamado basedosdados.br_anatel_banda_larga_fixa.microdados. Vamos explicar cada parte do código:
+SELECT *: Esta parte da consulta solicita a seleção de todas as colunas disponíveis na tabela referenciada. O caractere asterisco * é usado como um curinga para representar todas as colunas.
+FROM basedosdados.br_anatel_banda_larga_fixa.microdados``: Aqui, especifica-se a tabela da qual os dados serão recuperados. Parece que a tabela está localizada em um esquema chamado basedosdados, no dataset br_anatel_banda_larga_fixa, e tem o nome microdados.
+WHERE sigla_uf = 'RJ': Essa cláusula impõe uma condição para os resultados. A consulta retornará apenas as linhas em que a coluna sigla_uf é igual a 'RJ'. Isso filtra os dados para incluir apenas registros relacionados ao estado do Rio de Janeiro.
+LIMIT 1000: Esta cláusula limita o número de linhas retornadas pelo resultado da consulta a 1000. Isso pode ser útil para evitar a recuperação de grandes conjuntos de dados quando você está interessado apenas em uma amostra ou parte dos resultados.
+Portanto, a consulta completa retorna todas as colunas para as linhas na tabela microdados onde a coluna sigla_uf é igual a 'RJ', limitando o resultado a 1000 linhas.
+
+
+
+
+
+
