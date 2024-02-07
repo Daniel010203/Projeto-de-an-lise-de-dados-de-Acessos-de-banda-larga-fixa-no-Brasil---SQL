@@ -1,0 +1,32 @@
+SELECT porte_empresa,sigla_uf,ano
+FROM `basedosdados.br_anatel_banda_larga_fixa.microdados`
+WHERE porte_empresa = 'Grande Porte'
+AND sigla_uf = 'MG'
+OR sigla_uf = 'RS'
+AND ano = 2008
+
+EXPLICAÇÃO DO CÓDIGO:
+Claro! Vamos analisar o código SQL que você forneceu:
+
+```sql
+SELECT porte_empresa, sigla_uf, ano
+FROM `basedosdados.br_anatel_banda_larga_fixa.microdados`
+WHERE porte_empresa = 'Grande Porte'
+AND sigla_uf = 'MG'
+OR sigla_uf = 'RS'
+AND ano = 2008;
+```
+
+Aqui está o que cada parte do código faz:
+
+1. **`SELECT porte_empresa, sigla_uf, ano`**: Esta parte especifica as colunas que queremos selecionar na consulta. Neste caso, estamos interessados nas colunas `porte_empresa`, `sigla_uf` e `ano`.
+
+2. **`FROM basedosdados.br_anatel_banda_larga_fixa.microdados`**: Aqui, estamos indicando a tabela da qual queremos recuperar os dados. A tabela é chamada `microdados` e está localizada no conjunto de dados `br_anatel_banda_larga_fixa` no banco de dados `basedosdados`.
+
+3. **`WHERE porte_empresa = 'Grande Porte' AND sigla_uf = 'MG' OR sigla_uf = 'RS' AND ano = 2008`**: Esta cláusula `WHERE` filtra os resultados. Estamos buscando registros onde:
+    - O valor da coluna `porte_empresa` é igual a `'Grande Porte'`.
+    - E a coluna `sigla_uf` é igual a `'MG'`.
+    - Ou a coluna `sigla_uf` é igual a `'RS'`.
+    - E a coluna `ano` é igual a `2008`.
+
+    Note que usamos parênteses para agrupar as condições de forma apropriada. A lógica aqui é que queremos registros que sejam de "Grande Porte" em Minas Gerais (`'MG'`) ou no Rio Grande do Sul (`'RS'`) e que também sejam do ano de 2008.
