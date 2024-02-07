@@ -1,0 +1,28 @@
+SELECT *
+FROM `basedosdados.br_anatel_banda_larga_fixa.microdados`
+WHERE acessos IS NOT NULL
+AND sigla_uf IN ('SP')
+AND (transmissao = 'Satelite' OR transmissao = 'Radio')
+LIMIT 1000;
+
+EXPLICAÇÃO DO CÓDIGO:
+Claro! Vamos analisar o código SQL e corrigir o erro de sintaxe:
+
+```sql
+SELECT *
+FROM `basedosdados.br_anatel_banda_larga_fixa.microdados`
+WHERE acessos IS NOT NULL
+AND sigla_uf IN ('SP')
+AND (transmissao = 'Satelite' OR transmissao = 'Radio')
+LIMIT 1000;
+```
+
+Aqui estão as correções e uma explicação do código:
+
+1. **`AND (transmissao = 'Satelite' OR transmissao = 'Radio')`**:
+    - O erro estava na condição `AND transmissao = 'Satelite' OR 'Radio'`.
+    - A correção envolveu agrupar as duas opções de transmissão com parênteses.
+    - Agora, estamos filtrando as linhas onde a coluna `transmissao` é igual a 'Satelite' **ou** 'Radio'.
+
+2. **`LIMIT 1000`**:
+    - Limitamos o resultado a 1000 linhas.
