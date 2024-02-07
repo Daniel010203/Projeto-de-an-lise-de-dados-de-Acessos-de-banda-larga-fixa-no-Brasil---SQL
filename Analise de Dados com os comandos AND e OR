@@ -1,0 +1,35 @@
+SELECT *
+FROM `basedosdados.br_anatel_banda_larga_fixa.microdados`
+WHERE sigla_uf IN ('PE', 'RJ')
+AND ano IN (2019, 2020)
+AND empresa = 'OI'
+AND transmissao = 'Cabo Metalico'
+LIMIT 1000;
+
+EXPLICAÇÃO DO CÓDIGO:
+Claro! Vamos analisar o script SQL passo a passo:
+
+1. **SELECT * FROM `basedosdados.br_anatel_banda_larga_fixa.microdados`**:
+    - A cláusula `SELECT` é usada para especificar quais colunas queremos recuperar da tabela.
+    - O asterisco (`*`) indica que queremos todas as colunas.
+    - O nome da tabela é `microdados` e está localizada no conjunto de dados `br_anatel_banda_larga_fixa`.
+
+2. **WHERE sigla_uf IN ('PE', 'RJ')**:
+    - A cláusula `WHERE` é usada para filtrar os resultados com base em condições.
+    - Aqui, estamos filtrando as linhas onde a coluna `sigla_uf` (que representa o estado) contém os valores 'PE' (Pernambuco) ou 'RJ' (Rio de Janeiro).
+
+3. **AND ano IN (2019, 2020)**:
+    - Adicionamos outra condição com `AND`.
+    - Estamos filtrando as linhas onde a coluna `ano` contém os valores 2019 ou 2020.
+
+4. **AND empresa = 'OI'**:
+    - Mais uma condição com `AND`.
+    - Estamos filtrando as linhas onde a coluna `empresa` é igual a 'OI'.
+
+5. **AND transmissao = 'Cabo Metalico'**:
+    - Última condição com `AND`.
+    - Estamos filtrando as linhas onde a coluna `transmissao` é igual a 'Cabo Metálico'.
+
+6. **LIMIT 1000**:
+    - Limitamos o número de resultados a 1000 linhas.
+
