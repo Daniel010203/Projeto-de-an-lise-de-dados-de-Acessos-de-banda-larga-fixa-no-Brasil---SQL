@@ -34,4 +34,4 @@ Este projeto é uma contribuição importante para a compreensão e melhoria do 
 
 ---
 
-*Este projeto foi desenvolvido por Daniel010203 como parte do seu trabalho de análise de dados. Para mais informações, entre em contato pelo e-mail: [seuemail@email.com](mailto:seuemail@email.com).*
+*Este projeto foi desenvolvido por Daniel010203 como parte do seu trabalho de análise de dados. Para mais informações, entre em contato pelo e-mail: daniel.oliveiravieira@hotmail.com.*
